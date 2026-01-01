@@ -1,3 +1,5 @@
+alert('Alert! You can see all answers in Console after Filling the all Prompts')
+
 // City Name
 let cityName = prompt('Enter your cityName🏙️')
 
@@ -104,17 +106,19 @@ else if (c === 14) {
 
 console.log('======================================================================================================================================================================================================')
 
-console.log('var materialCost = 20000; var laborCost = 2000; var totalCost = materialCost + laborCost; if (totalCost === laborCost + materialCost){ alert("The cost equals"); }')
-
 let materialCost = Number(prompt('Enter material cost'));
 let laborCost = Number(prompt('Enter labor cost'));
+
+console.log('var materialCost = ' + materialCost + ' var laborCost = ' + laborCost + ' var totalCost = materialCost + laborCost; if (totalCost === laborCost + materialCost){ alert("The cost equals"); }')
+
 let totalCost = materialCost + laborCost;
 if (totalCost === laborCost + materialCost) {
     console.log("The cost equals");
 }else{ 
-a('Not equal')
+console.log('Not equal')
 }
-console.log('The total cost is', totalCost);
+
+console.log('The total cost is ' + totalCost);
 
 console.log('======================================================================================================================================================================================================')
 
@@ -160,9 +164,11 @@ if(percentage >= 90){
     report = 'you get B grade'
 }else if(percentage >= 50){
     report = 'you get C grade'
-}else{
+}else if(percentage<50){
     report = 'Fail'
-}   
+}else{
+    report = 'You did not write obtained and total marks or anyone'
+} 
 
 if(report === 'you get A grade'){
     msg = 'Excelent'
@@ -170,6 +176,8 @@ if(report === 'you get A grade'){
     msg = 'Good'
 }else if(report === 'you get C grade'){
     msg = 'you Need improvement'
+}else if(report === 'You did not write obtained and total marks or anyone'){
+    msg = "Not found"
 }else{
     msg = 'Sorry'
 }
@@ -178,10 +186,9 @@ console.log('Marks Sheet')
 console.log('')
 console.log('Total Marks: ' + totalMarks)
 console.log('Obtained Marks: ' + obtainedMarks)
-console.log('Percentage: ' + percentage)
+console.log('Percentage: ' + percentage + "%")
 console.log('Grade: ' + report)
 console.log('Remarks: ' + msg)
-console.log('')
 
 // console.log('You get', percentage+"% and", report, 'and', msg)
 
@@ -191,7 +198,7 @@ console.log('===================================================================
 let secretNumber = 7;
 let guess = Number(prompt('Guess the secret number (1 to 10)'));
 
-console.log('Secret Number Section')
+console.log('Guess the Secret Number Section')
 
 if(guess === secretNumber){
     console.log('Bingo! Correct answer')
