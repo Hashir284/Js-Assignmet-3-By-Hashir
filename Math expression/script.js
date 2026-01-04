@@ -60,7 +60,7 @@ console.log(nowy)
 console.log('')
 console.log('                   Problem 3')
 
-let table = 5
+let table = Number(prompt('Enter the any number for getting it table'))
 let postincreamentintable = 1
 
 let tableof5
@@ -88,7 +88,7 @@ console.log(tableof5)
 //              Fourth Section
 
 console.log('')
-console.log('                   Problem 3')
+console.log('                   Problem 4')
 let Sub1 = prompt('Enter the First Subject Name')
 let Sub2 = prompt('Enter the Second Subject Name')
 let Sub3 = prompt('Enter the Third Subject Name')
@@ -98,17 +98,17 @@ if(isNaN(totalMarks)){
     totalMarks =('Undefined')
 }
 
-let obtainedMarks1 = Number(prompt('Enter the total Marks of ' + Sub1))
+let obtainedMarks1 = Number(prompt('Enter the obtianed Marks of ' + Sub1))
 if(isNaN(obtainedMarks1)){
     obtainedMarks1 =('Undefined')
 }
 
-let obtainedMarks2 = Number(prompt('Enter the total Marks of ' + Sub2))
+let obtainedMarks2 = Number(prompt('Enter the obtianed Marks of ' + Sub2))
 if(isNaN(obtainedMarks2)){
     obtainedMarks2 =('Undefined')
 }
 
-let obtainedMarks3 = Number(prompt('Enter the total Marks of ' + Sub3))
+let obtainedMarks3 = Number(prompt('Enter the obtianed Marks of ' + Sub3))
 if(isNaN(obtainedMarks3)){
     obtainedMarks3 =('Undefined')
 }
@@ -126,7 +126,7 @@ let obtainedMarks2percentage = obtainedMarks2 / totalMarks * 100
 let obtainedMarks3percentage = obtainedMarks3 / totalMarks * 100
 
 let subadd = obtainedMarks1 + obtainedMarks2 + obtainedMarks3
-let subaddpercentage = subadd / totalMarks * 100
+let subaddpercentage = (subadd / totalMarksofAllsubjectis) * 100
 
 
 console.log('')
@@ -137,3 +137,32 @@ console.log('You get ' + obtainedMarks3percentage + "% Marks" + ' in ' + Sub3)
 console.log('Your total obtained Marks of all subject is ' + subadd)
 console.log('')
 console.log('Your total percentage of all subject is ' + subaddpercentage + '%')
+
+let report = ""
+
+let percentage = subaddpercentage
+
+ if(percentage >= 80){
+    report = ('Congratutions! You get A1 grade')
+}
+else if(percentage >= 70){
+    report = ('Congratutions! You get A grade')
+}
+else if(percentage >= 60){
+    report = ('Congratutions! You get B grade')
+}
+else if(percentage >= 50){
+    report = ('Congratutions! You get D grade')
+}
+else if(percentage >= 40){
+    report = ('Congratutions! You get C grade')
+}
+else if(percentage >= 33){
+   report =  ('Cogtulations! You Passed')
+}
+else{
+    report = ('Unsatisfied')
+}
+
+let answer = (report)
+console.log(answer)
