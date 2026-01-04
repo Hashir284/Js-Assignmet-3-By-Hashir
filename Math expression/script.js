@@ -1,13 +1,13 @@
 //          User information
-// let username = prompt('Enter your name')
-// alert('                                        Welcome ' + username + '\n' + username + ' you can see all answers in console after filling the all prompts')
+let username = prompt('Enter your name')
+alert('                                        Welcome ' + username + '\n' + username + ' you can see all answers in console after filling the all prompts')
 
 
 
 //          First Section
 console.log('                   Problem 1')
 
-let a = 10
+let a = Number(prompt('Enter the value of "a" in number'))
 console.log('The value of a is ' + a)
 console.log("-------------------------------------------------------")
 console.log('The value of ++a is ' + ++a)
@@ -26,8 +26,8 @@ console.log("-------------------------------------------------------")
 
 //          Second Section
 
-let x = 2
-let y = 1
+let x =  Number(prompt('Enter the value of "x" in number'))
+let y =  Number(prompt('Enter the value of "y" in number'))
 
 //             1     0     1   1
 let result = --x - --y + ++y + y--
